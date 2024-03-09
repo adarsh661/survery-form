@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="form.css">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+          }
+
+        body{
+          padding: 0;
+          margin: 0;
+          text-align: center;
+
+        }
+          
+          input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+          }
+          
+          label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+          }
+          
+          input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+          }
+          
+         
+          
+          .container { 
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            width: 75%;
+           margin: auto;
+           
+        
+          }
+          
+          .col-25 {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+           
+           
+
+            
+          }
+          
+          .col-75 {
+            float: left;
+            width: 20%;
+            margin-top: 6px;
+            text-align: left;
+          }
+         
+
+
+    </style>
+</head>
+<body style="background-color: rgb(54, 148, 148); text-align:center;">
+    <h1 style="text-align: center;">survey Form</h1>
+   <div style="text-align: center;">
+  <div class="container">
+    <!-- <form action="/action_page.php"> -->
+        <p style="text-align: center;">Let us known we can improve free codecamp</p>
+    <div class="row" style="text-align: right;">
+      <div class="col-25">
+        
+        <label for="fname">Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name">
+      </div>
+    </div>
+    <div class="row" style="text-align: right;">
+      <div class="col-25">
+        <label for="lname">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your Email">
+      </div>
+    </div>
+    <div class="row" style="text-align: right;">
+        <div class="col-25">
+          <label for="fname">Age</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your Age">
+        </div>
+      </div>
+
+
+
+
+    <div class="row" style="text-align: right;">
+      <div class="col-25">
+        <label for="country">which option best describes your curent role?</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="">
+          <option value="student">student</option>
+          <option value="job">job</option>
+          <option value="jobless">jobless</option>
+        </select>
+      </div>
+    </div>
+    <div class="row"  style="text-align: right;">
+      <div class="col-25">
+      <p>How likely is that you would recomment<br>
+        freecodecamp to a friend?
+      </p> 
+ 
+      </div>
+      <div class="col-75">
+        <input type="radio" id="box" name="box">
+        <label for="1">Definitely</label><br>
+        <input type="radio" id="box" name="box">
+        <label for="2">Maybe</label><br>
+        <input type="radio" id="box" name="box">
+        <label for="3">Not sure</label><br><br>
+      </div>
+    </div>
+    <br>
+    <div class="row"  style="text-align: right;">
+        <div class="col-25">
+            <p>what do you like most in FCC:</p>
+        </div>
+    <div class="col-75">
+        <select id="country" name="">
+          <option value="student">select an option</option>
+          <option value="job"></option>
+          <option value="jobless"></option>
+        </select>
+      </div>
+    </div>
+    <div class="row"  style="text-align: right;">
+        <div class="col-25">
+         <p>Things that should be improved in the future<br>
+                     (check all that apply):</p>
+      
+        </div>
+    <div class="col-75">
+        <input type="radio" id="box">
+        <label for="1">Front-end projects</label><br>
+        <input type="radio" id="box2" >
+        <label for="2">Back-end projects</label><br>
+        <input type="radio" id="box3" >
+        <label for="3">Data visualization</label><br><br>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
+
+
+</form>
+</form> 
+</body>
+</html>
